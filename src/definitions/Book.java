@@ -34,4 +34,10 @@ public class Book {
     public void setISBNNumberOfBook(String ISBNNumberOfBook) {
         this.ISBNNumberOfBook = ISBNNumberOfBook;
     }
+
+    public Book(String nameOfBook, String nameOfAuthorOfBook, String ISBNNumberOfBook) {
+        this.nameOfBook = nameOfBook;
+        this.nameOfAuthorOfBook = nameOfAuthorOfBook;
+        this.ISBNNumberOfBook = ISBNNumberOfBook;
+    }
 }
