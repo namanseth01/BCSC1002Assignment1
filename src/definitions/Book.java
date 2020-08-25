@@ -41,12 +41,17 @@ public class Book {
     }
 
     public void setBookAvailable(boolean bookAvailable) {
-        isBookAvailable = bookAvailable;
+        this.isBookAvailable = bookAvailable;
     }
 
-    public Book(String nameOfBook, String nameOfAuthorOfBook, String ISBNNumberOfBook) {
+    public Book(String nameOfBook, String nameOfAuthorOfBook, String ISBNNumberOfBook, boolean isBookAvailable) {
         this.nameOfBook = nameOfBook;
         this.nameOfAuthorOfBook = nameOfAuthorOfBook;
         this.ISBNNumberOfBook = ISBNNumberOfBook;
+        this.isBookAvailable = isBookAvailable;
+    }
+
+    public String toString() {
+        return "Name of the book: " + getNameOfBook() + "Name of the author of the book: " + getNameOfAuthorOfBook() + "ISBn Number of the code: " + getISBNNumberOfBook() + "Is book available? " + isBookAvailable();
     }
 }
