@@ -21,6 +21,13 @@ public class Book {
         this.isBookAvailable = isBookAvailable;
     }
 
+    public Book() {
+        this.nameOfBook = "Let Us C";
+        this.nameOfAuthorOfBook = "Yashwant Kanetkar";
+        this.ISBNNumberOfBook = "45632ALK45";
+        this.isBookAvailable = false;
+    }
+
     public String getNameOfBook() {
         return nameOfBook;
     }
