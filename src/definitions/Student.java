@@ -20,6 +20,7 @@ public class Student {
         this.universityRollNUmber = universityRollNUmber;
         this.numberOfBooksIssued = numberOfBooksIssued;
         this.booksIssued = new Book[1];
+        booksIssued[0] = new Book();
     }
 
     public Student() {
