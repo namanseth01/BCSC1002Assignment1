@@ -82,6 +82,15 @@ public class Student {
     }
 
     /**
+     * This method will allow the student to issue the book.
+     *
+     * @param bookName
+     */
+    public void doIssueBook(String bookName) {
+        System.out.println(bookName + "issued successfully");
+    }
+
+    /**
      * This method will show the list of books issued by the student.
      */
     public void showListOfBooksIssued() {
