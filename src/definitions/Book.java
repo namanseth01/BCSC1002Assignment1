@@ -10,6 +10,7 @@ public class Book {
     private String nameOfBook;
     private String nameOfAuthorOfBook;
     private String ISBNNumberOfBook;
+    private boolean isBookAvailable;
 
     public String getNameOfBook() {
         return nameOfBook;
@@ -23,6 +24,10 @@ public class Book {
         return ISBNNumberOfBook;
     }
 
+    public boolean isBookAvailable() {
+        return isBookAvailable;
+    }
+
     public void setNameOfBook(String nameOfBook) {
         this.nameOfBook = nameOfBook;
     }
@@ -33,6 +38,10 @@ public class Book {
 
     public void setISBNNumberOfBook(String ISBNNumberOfBook) {
         this.ISBNNumberOfBook = ISBNNumberOfBook;
+    }
+
+    public void setBookAvailable(boolean bookAvailable) {
+        isBookAvailable = bookAvailable;
     }
 
     public Book(String nameOfBook, String nameOfAuthorOfBook, String ISBNNumberOfBook) {
