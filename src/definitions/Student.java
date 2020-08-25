@@ -31,28 +31,28 @@ public class Student {
         return name;
     }
 
-    public long getUniversityRollNUmber() {
-        return universityRollNUmber;
-    }
-
-    public int getNumberOfBooksIssued() {
-        return numberOfBooksIssued;
-    }
-
-    public Book[] getBooksIssued() {
-        return booksIssued.clone();
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public long getUniversityRollNUmber() {
+        return universityRollNUmber;
     }
 
     public void setUniversityRollNUmber(long universityRollNUmber) {
         this.universityRollNUmber = universityRollNUmber;
     }
 
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
         this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public Book[] getBooksIssued() {
+        return booksIssued.clone();
     }
 
     public void setBooksIssued(Book[] booksIssued) {
