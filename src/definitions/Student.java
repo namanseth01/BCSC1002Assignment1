@@ -91,6 +91,15 @@ public class Student {
     }
 
     /**
+     * this method will allow the student to return the book.
+     *
+     * @param bookName
+     */
+    public void doReturnBook(String bookName) {
+        System.out.println(bookName + "returned successfully");
+    }
+
+    /**
      * This method will show the list of books issued by the student.
      */
     public void showListOfBooksIssued() {
