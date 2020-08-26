@@ -13,19 +13,19 @@ public class Student {
     private String name;
     private long universityRollNUmber;
     private int numberOfBooksIssued;
-    private Book[] booksIssued;
+    private Book[] nameOfBooksIssued;
 
     public Student(String name, long universityRollNUmber, int numberOfBooksIssued) {
         this.name = name;
         this.universityRollNUmber = universityRollNUmber;
         this.numberOfBooksIssued = numberOfBooksIssued;
-        this.booksIssued = new Book[1];
-        booksIssued[0] = new Book();
+        this.nameOfBooksIssued = new Book[1];
+        nameOfBooksIssued[0] = new Book();
     }
 
     public Student() {
-        this.booksIssued = new Book[1];
-        booksIssued[0] = new Book();
+        this.nameOfBooksIssued = new Book[1];
+        nameOfBooksIssued[0] = new Book();
     }
 
     public String getName() {
@@ -53,11 +53,11 @@ public class Student {
     }
 
     public Book[] getBooksIssued() {
-        return booksIssued.clone();
+        return nameOfBooksIssued.clone();
     }
 
     public void setBooksIssued(Book[] booksIssued) {
-        this.booksIssued = booksIssued;
+        this.nameOfBooksIssued = booksIssued;
     }
 
     public String toString() {
@@ -104,7 +104,7 @@ public class Student {
      * This method will show the list of books issued by the student.
      */
     public void showListOfBooksIssued() {
-        for (Book book : booksIssued) {
+        for (Book book : nameOfBooksIssued) {
             System.out.println("List of books: ");
             System.out.println(book);
         }
