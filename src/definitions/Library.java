@@ -15,4 +15,8 @@ public class Library {
             booksCurrentlyAvailable[index] = new Book();
         }
     }
+
+    public Book[] getBooksCurrentlyAvailable() {
+        return booksCurrentlyAvailable.clone();
+    }
 }
