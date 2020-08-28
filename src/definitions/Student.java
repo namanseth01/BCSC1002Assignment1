@@ -61,7 +61,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student Name: " + getName() + "University Roll Number: " + getUniversityRollNUmber() + "Number of books issued by student: " + getUniversityRollNUmber() + "Names of book issued: " + Arrays.toString(getBooksIssued());
+        return "Student Name: " + getName() + " University Roll Number: " + getUniversityRollNUmber() + " Number of books issued by student: " + getUniversityRollNUmber() + "Names of book issued: " + Arrays.toString(getBooksIssued());
     }
 
     @Override
@@ -88,7 +88,7 @@ public class Student {
      * @param bookName
      */
     public void doIssueBook(String bookName) {
-        System.out.println(bookName + "issued successfully");
+        System.out.println(bookName + " issued successfully");
     }
 
     /**
@@ -97,7 +97,7 @@ public class Student {
      * @param bookName
      */
     public void doReturnBook(String bookName) {
-        System.out.println(bookName + "returned successfully");
+        System.out.println(bookName + " returned successfully");
     }
 
     /**

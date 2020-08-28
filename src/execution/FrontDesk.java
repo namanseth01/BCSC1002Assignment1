@@ -38,7 +38,6 @@ public class FrontDesk {
                     studentName = scanner.nextLine();
                     Student student = new Student(studentName, studentUniversityRollNumber);
                     System.out.print("Enter the name of book you want to issue: ");
-                    scanner.nextLine();
                     bookName = scanner.nextLine();
                     student.doIssueBook(bookName);
                 }
@@ -49,8 +48,7 @@ public class FrontDesk {
                     scanner.nextLine();
                     studentName = scanner.nextLine();
                     Student student1 = new Student(studentName, studentUniversityRollNumber);
-                    System.out.println("Enter the name of you want to return: ");
-                    scanner.nextLine();
+                    System.out.println("Enter the name of book you want to return: ");
                     bookName = scanner.nextLine();
                     student1.doReturnBook(bookName);
                 }
@@ -63,6 +61,9 @@ public class FrontDesk {
                     Student student2 = new Student(studentName, studentUniversityRollNumber);
                     System.out.println("List of all books issued:");
                     student2.showListOfBooksIssued();
+                }
+
+                case QUIT -> {
                 }
                 default -> System.out.println("Invalid Input..");
             }
