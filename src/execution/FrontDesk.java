@@ -6,6 +6,8 @@
  * */
 package execution;
 
+import definitions.Student;
+
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -19,5 +21,52 @@ public class FrontDesk {
         int studentInput;
         long studentUniversityRollNumber;
         String studentName, bookName;
+        do {
+            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
+            System.out.println("How may I help you today?");
+            System.out.println("1. Issue a new book for me.");
+            System.out.println("2. Return a previously issued book from me.");
+            System.out.println("3. Show me all my issued books.");
+            System.out.println("4. Exit.");
+            studentInput = scanner.nextInt();
+            switch (studentInput) {
+                case ISSUE_NEW_BOOK -> {
+                    System.out.print("Enter university roll number: ");
+                    studentUniversityRollNumber = scanner.nextLong();
+                    System.out.print("Enter your name: ");
+                    scanner.nextLine();
+                    studentName = scanner.nextLine();
+                    Student student = new Student(studentName, studentUniversityRollNumber);
+                    System.out.print("Enter the name of book you want to issue: ");
+                    scanner.nextLine();
+                    bookName = scanner.nextLine();
+                    student.doIssueBook(bookName);
+                }
+                case RETURN_BOOK -> {
+                    System.out.print("Enter university roll number: ");
+                    studentUniversityRollNumber = scanner.nextLong();
+                    System.out.print("Enter your name: ");
+                    scanner.nextLine();
+                    studentName = scanner.nextLine();
+                    Student student1 = new Student(studentName, studentUniversityRollNumber);
+                    System.out.println("Enter the name of you want to return: ");
+                    scanner.nextLine();
+                    bookName = scanner.nextLine();
+                    student1.doReturnBook(bookName);
+                }
+                case LIST_OF_ALL_BOOKS_ISSUED -> {
+                    System.out.print("Enter university roll number: ");
+                    studentUniversityRollNumber = scanner.nextLong();
+                    System.out.print("Enter your name: ");
+                    scanner.nextLine();
+                    studentName = scanner.nextLine();
+                    Student student2 = new Student(studentName, studentUniversityRollNumber);
+                    System.out.println("List of all books issued:");
+                    student2.showListOfBooksIssued();
+                }
+                default -> System.out.println("Invalid Input..");
+            }
+        } while (studentInput != QUIT);
+        scanner.close();
     }
 }
