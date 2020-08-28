@@ -15,10 +15,10 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] nameOfBooksIssued;
 
-    public Student(String name, long universityRollNUmber, int numberOfBooksIssued) {
+    public Student(String name, long universityRollNUmber) {
         this.name = name;
         this.universityRollNUmber = universityRollNUmber;
-        this.numberOfBooksIssued = numberOfBooksIssued;
+        this.numberOfBooksIssued = 1;
         this.nameOfBooksIssued = new Book[1];
         nameOfBooksIssued[0] = new Book();
     }
