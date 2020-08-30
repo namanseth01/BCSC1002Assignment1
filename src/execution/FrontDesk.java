@@ -59,7 +59,7 @@ public class FrontDesk {
                     scanner.nextLine();
                     studentName = scanner.nextLine();
                     Student student2 = new Student(studentName, studentUniversityRollNumber);
-                    System.out.println("List of all books issued:");
+                    System.out.println("List of all books issued: ");
                     student2.showListOfBooksIssued();
                 }
 
